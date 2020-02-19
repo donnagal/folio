@@ -11,6 +11,10 @@ body {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
+[v-cloak] {
+  display: none;
+}
+
 .swiper-container {
   width: 100%;
   height: 100%;

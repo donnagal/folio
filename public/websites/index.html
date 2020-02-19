@@ -57,12 +57,12 @@
             <div class="w-full font-sans text-left text-white" >
                 <div class="ripple bg-auto bg-center bg-cover h-screen" :style="{ 'background-image': 'url(' + item.img + ')' }">
                   <div class="flex content-center flex-wrap absolute top-0 bottom-0 pb-20 px-20 fade-in delay-1-2">
-                    <div class="container mx-auto lg:px-0">
+                    <div class="container mx-auto lg:px-0 lg:px-0 pt-64">
                         <div class="text-white">
-                          <h1 class="mb-8 mark-bold lg:text-6xl text-5xl leading-none">
+                          <h1 class="mb-8 mark-bold lg:text-6xl text-5xl leading-none" v-cloak>
                             {{ item.project }}
                           </h1>
-                          <p class="pb-8">{{ item.text }}</p>
+                          <p class="pb-8" v-cloak>{{ item.text }}</p>
                           <a class="bg-transparent hover:bg-white text-white hover:text-black py-2 px-6 border border-white hover:grey-transparent rounded rounded-full 
                             no-underline" target="_blank" :href="item.url">
                             Visit Project  <span class="text-xl">↬</span>
