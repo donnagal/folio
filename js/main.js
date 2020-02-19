@@ -13,6 +13,10 @@ $(document).ready( function() {
 	mousewheel: {
 		invert: true,
 	},
+	keyboard: {
+		enabled: true,
+		onlyInViewport: false,
+	  },
 	navigation: {
         nextEl: '.swiper-next',
         prevEl: '.swiper-prev',
@@ -24,23 +28,17 @@ $(document).ready( function() {
   var swiperV = new Swiper('.swiper-container-v', {
       pagination: '.swiper-pagination-v',
       direction: 'horizontal',
-      slidesPerView: 4,
-      spaceBetween: 50,
+      slidesPerView: 2,
+      spaceBetween: 0,
       nested: true,
 	mousewheel: {
 		invert: true,
 	},
 	breakpoints: {
-		// when window width is <= 700px
-		700: {
-		  slidesPerView: 1.3,
-		  spaceBetween: 20,
-		},
-		// when window width is <= 1200px
-		1200: {
-			slidesPerView: 2,
-			spaceBetween: 20,
-			},
+		640: {
+		slidesPerView: 2,
+		spaceBetween: 50,
+		}
 	  }
   });
 });
@@ -57,6 +55,10 @@ $(document).ready(function(){
 		mousewheel: {
 			invert: true,
 		},
+		keyboard: {
+			enabled: true,
+			onlyInViewport: false,
+		  },
 	});
 
 	$('.swiper-pagination-bullet').hover(function() {
@@ -65,6 +67,33 @@ $(document).ready(function(){
 });
 
 
+$(document).ready(function(){
+	var swiper = new Swiper('#emails', {
+		slidesPerView: 1,
+		spaceBetween: 0,
+		pagination: {
+		  el: '.swiper-pagination',
+		  clickable: true,
+		},
+		mousewheel: {
+			invert: true,
+		},
+		keyboard: {
+			enabled: true,
+			onlyInViewport: false,
+		  },
+		  breakpoints: {
+			640: {
+			slidesPerView: 3,
+			spaceBetween: 20,
+			}
+		  }
+	});
+
+	$('.swiper-pagination-bullet').hover(function() {
+		$( this ).trigger( "click" );
+	});
+});
 
 
 
