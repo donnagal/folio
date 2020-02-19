@@ -5,7 +5,7 @@ var gallery = new Vue({
   data: {
     filterAll: '',
     items: [
-      { project: 'Tap of War', text: 'Slurpee | Award Judges Landingpage', url: 'http://awardjudges.com.au/slurpeetapofwar/ ', img: '/img/gallery/5.jpg', },
+      { project: 'Slurpee', text: 'Tap of War | Award Judges Landingpage', url: 'http://awardjudges.com.au/slurpeetapofwar/ ', img: '/img/gallery/5.jpg', },
       { project: 'Fed Square', text: 'Award Judges Landingpage', url: 'http://awardjudges.com.au/fedsquare/public/', img: '/img/gallery/1.jpg', },
       { project: 'UNIQLO Australia', text: 'Umood | Award Judges Landingpage', url: 'http://awardjudges.com.au/umood/ ', img: '/img/gallery/8.jpg', },
       { project: 'Kmart', text: 'Stick and Style | Award Judges Landingpage', url: 'http://awardjudges.com.au/stickandstyle/ ', img: '/img/gallery/10.jpg', },
