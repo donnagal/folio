@@ -71,6 +71,7 @@ $(document).ready(function(){
 	var swiper = new Swiper('#emails', {
 		slidesPerView: 1,
 		spaceBetween: 0,
+		direction: 'vertical',
 		pagination: {
 		  el: '.swiper-pagination',
 		  clickable: true,
@@ -84,6 +85,7 @@ $(document).ready(function(){
 		  },
 		  breakpoints: {
 			640: {
+			direction: 'horizontal',	
 			slidesPerView: 3,
 			spaceBetween: 20,
 			}
