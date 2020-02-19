@@ -1,0 +1,95 @@
+html, body {
+  position: relative;
+  height: 100%;
+}
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+}
+
+.bg-blackest {
+  background-color: rgb(4, 4, 4);
+}
+
+
+.icon-xl { font-size: 5rem; }
+
+.font-sans {
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.text-vw { font-size: 10vw; }
+
+// Desktop
+@media only screen and (min-width: 990px) {
+  .text-6xl {
+    font-size: 5rem;
+  }
+  .text-7xl {
+    font-size: 7rem;
+  }
+  .icon-xl { font-size: 15rem; }
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .lg\:text-11xl {
+      font-size: 10rem;
+      line-height: 1.0;
+  }
+}
+
+// Small
+@media only screen and (max-width: 990px) { 
+  .sm\:hide {
+    display: none;
+  }
+}
+
+
+$eye-color: rgba(41, 41, 41, 0.619);
+$shadow-color: #f74902;
+$pupil-color: #f74902;
+$eye-size: 300px;
+$pupil-size: $eye-size / 2;
+$animate-time: 0.15s;
+
+
+
+@mixin common($size) {
+	width: $size;
+	height: $size;
+	position: absolute;
+	top: calc(50% - #{$size / 2});
+	left: calc(50% - #{$size / 2});
+	border-radius: 50%;
+}
+
+.eye {
+	@include common($eye-size);
+  background-color: $eye-color;
+  box-shadow: 0px 0px 20px 20px rgba(99, 99, 99, 0.5);
+  z-index: -1;
+	.pupil {
+		@include common($pupil-size);
+		background-color: $pupil-color;
+    transition: top $animate-time ease-out, left $animate-time ease-out;
+    animation: squishing 5s ease-in-out infinite alternate;
+	}
+	.mask {
+		// background-image: radial-gradient(circle at 80% 20%, rgba($eye-color, 0.6), rgba($shadow-color, 0.1) 50%);
+		@include common($eye-size);
+  }
+  svg {
+    animation: skewing 8s 1.5s ease-in-out infinite;
+  }
+}
