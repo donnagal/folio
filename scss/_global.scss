@@ -8,6 +8,17 @@ body {
   background-color: #f1f1ef;
 }
 
+.highlight {
+  background-image: linear-gradient(to right, transparent 50%, #f7d8c8 50%);
+  background-origin: 0;
+  background-size: 200% 50%;
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  transition: background-position 0.4s;
+  &:hover{
+     background-position: -100% 100%; 
+  }
+}
 
 [v-cloak] { display: none; }
 .swiper-container {
