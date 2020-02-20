@@ -50,6 +50,13 @@ $(document).ready(function(){
 		slidesPerView: 1,
 		spaceBetween: 0,
 		direction: 'horizontal',
+		autoplay: {
+			delay: 4000,
+		  },
+		  navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		  },
 		pagination: {
 		  el: '.swiper-pagination',
 		  clickable: true,
