@@ -47,18 +47,24 @@ $(document).ready( function() {
 
 $(document).ready(function(){
 	var swiper = new Swiper('#folio', {
+		slidesPerView: 1,
+		spaceBetween: 0,
 		direction: 'vertical',
 		pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-		},
-		mousewheel: {
-			invert: true,
+		  el: '.swiper-pagination',
+		  clickable: true,
 		},
 		keyboard: {
 			enabled: true,
 			onlyInViewport: false,
 		  },
+		  breakpoints: {
+			640: {
+			direction: 'horizontal',	
+			slidesPerView: 2.3,
+			spaceBetween: 10,
+			}
+		  }
 	});
 
 	$('.swiper-pagination-bullet').hover(function() {
@@ -73,11 +79,8 @@ $(document).ready(function(){
 		spaceBetween: 0,
 		direction: 'vertical',
 		pagination: {
-		  el: '.swiper-pagination',
+		  el: '.email-pag',
 		  clickable: true,
-		},
-		mousewheel: {
-			invert: true,
 		},
 		keyboard: {
 			enabled: true,
@@ -87,7 +90,7 @@ $(document).ready(function(){
 			640: {
 			direction: 'horizontal',	
 			slidesPerView: 3,
-			spaceBetween: 20,
+			spaceBetween: 10,
 			}
 		  }
 	});
@@ -179,4 +182,4 @@ $(document).ready(function() {
 
 
 
-
+  AOS.init()
