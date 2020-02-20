@@ -1,6 +1,6 @@
 // http://idangero.us/swiper/api/
 
-
+$(".button-m").click(function(){$(".menu").slideToggle("hidden")});
 
 $(document).ready( function() {
   var swiperH = new Swiper('.swiper-container-h', {
@@ -49,7 +49,7 @@ $(document).ready(function(){
 	var swiper = new Swiper('#folio', {
 		slidesPerView: 1,
 		spaceBetween: 0,
-		direction: 'vertical',
+		direction: 'horizontal',
 		pagination: {
 		  el: '.swiper-pagination',
 		  clickable: true,

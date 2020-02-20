@@ -13,10 +13,9 @@ body {
   background-color: #f1f1ef;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
   body {
     padding: 40px;
-    position: relative;
     z-index: 1;
   }
   body::before {
