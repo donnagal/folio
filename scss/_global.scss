@@ -61,45 +61,6 @@ body {
 }
 
 
-$eye-color: rgba(41, 41, 41, 0.619);
-$shadow-color: #f74902;
-$pupil-color: #f74902;
-$eye-size: 300px;
-$pupil-size: $eye-size / 2;
-$animate-time: 0.15s;
-
-
-
-@mixin common($size) {
-	width: $size;
-	height: $size;
-	position: absolute;
-	top: calc(50% - #{$size / 2});
-	left: calc(50% - #{$size / 2});
-	border-radius: 50%;
-}
-
-.eye {
-	@include common($eye-size);
-  background-color: $eye-color;
-  box-shadow: 0px 0px 20px 20px rgba(99, 99, 99, 0.5);
-  z-index: -1;
-	.pupil {
-		@include common($pupil-size);
-		background-color: $pupil-color;
-    transition: top $animate-time ease-out, left $animate-time ease-out;
-    animation: squishing 5s ease-in-out infinite alternate;
-	}
-	.mask {
-		// background-image: radial-gradient(circle at 80% 20%, rgba($eye-color, 0.6), rgba($shadow-color, 0.1) 50%);
-		@include common($eye-size);
-  }
-  svg {
-    animation: skewing 8s 1.5s ease-in-out infinite;
-  }
-}
-
-
 .overlay {
   &:after { 
     content: '';
@@ -127,5 +88,4 @@ $animate-time: 0.15s;
 .h-70 {
   height: 330px;
 }
-
 

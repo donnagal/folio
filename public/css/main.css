@@ -71,45 +71,6 @@ body {
   }
 }
 
-.eye {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  top: calc(50% - 150px);
-  left: calc(50% - 150px);
-  border-radius: 50%;
-  background-color: rgba(41, 41, 41, 0.619);
-  box-shadow: 0px 0px 20px 20px rgba(99, 99, 99, 0.5);
-  z-index: -1;
-}
-
-.eye .pupil {
-  width: 150px;
-  height: 150px;
-  position: absolute;
-  top: calc(50% - 75px);
-  left: calc(50% - 75px);
-  border-radius: 50%;
-  background-color: #f74902;
-  transition: top 0.15s ease-out, left 0.15s ease-out;
-  -webkit-animation: squishing 5s ease-in-out infinite alternate;
-  animation: squishing 5s ease-in-out infinite alternate;
-}
-
-.eye .mask {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  top: calc(50% - 150px);
-  left: calc(50% - 150px);
-  border-radius: 50%;
-}
-
-.eye svg {
-  -webkit-animation: skewing 8s 1.5s ease-in-out infinite;
-  animation: skewing 8s 1.5s ease-in-out infinite;
-}
-
 .overlay:after {
   content: '';
   position: absolute;
