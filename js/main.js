@@ -2,49 +2,6 @@
 
 $(".button-m").click(function(){$(".menu").slideToggle("hidden")});
 
-$(document).ready( function() {
-  var swiperH = new Swiper('.swiper-container-h', {
-      pagination: '.swiper-pagination-h',
-      direction: 'vertical',
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-	},
-	mousewheel: {
-		invert: true,
-	},
-	keyboard: {
-		enabled: true,
-		onlyInViewport: false,
-	  },
-	navigation: {
-        nextEl: '.swiper-next',
-        prevEl: '.swiper-prev',
-      },
-   hashNavigation: {
-     replaceState: true,
-   },
-  });
-  var swiperV = new Swiper('.swiper-container-v', {
-      pagination: '.swiper-pagination-v',
-      direction: 'horizontal',
-      slidesPerView: 2,
-      spaceBetween: 0,
-      nested: true,
-	mousewheel: {
-		invert: true,
-	},
-	breakpoints: {
-		640: {
-		slidesPerView: 2,
-		spaceBetween: 50,
-		}
-	  }
-  });
-});
-
-
-
 $(document).ready(function(){
 	var swiper = new Swiper('#folio', {
 		slidesPerView: 1,
@@ -159,7 +116,7 @@ var Nanobar = function() {
 	e = function(a) {
 		a = this.opts = a || {};
 		var b;
-		a.bg = a.bg || "#f39c12";
+		a.bg = a.bg || "#f7d8c8";
 		this.bars = [];
 		b = this.el = document.createElement("div");
 		c(this.el, k);
@@ -178,15 +135,6 @@ var nanobar = new Nanobar();
 nanobar.go(30);
 nanobar.go(60);
 nanobar.go(100);
-
-
-
-// Ripple 
-$(document).ready(function() {
-	$('.ripple').ripples('show');
-  }); 
-
-
 
 
   AOS.init()

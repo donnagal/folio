@@ -9,7 +9,7 @@ body {
 }
 
 .highlight {
-  background-image: linear-gradient(to right, transparent 50%, #f7d8c8 50%);
+  background-image: linear-gradient(to right, transparent 50%, $primary 50%);
   background-origin: 0;
   background-size: 200% 50%;
   background-repeat: repeat-x;
@@ -19,28 +19,9 @@ body {
      background-position: -100% 100%; 
   }
 }
-
-[v-cloak] { display: none; }
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-}
-
-.bg-blackest {
-  background-color: rgb(4, 4, 4);
-}
-
-
-.icon-xl { font-size: 5rem; }
-
 .font-sans {
   font-family: 'Montserrat', Arial, sans-serif;
 }
-
 .text-vw { font-size: 10vw; }
 
 // Desktop
@@ -71,32 +52,18 @@ body {
   }
 }
 
-
-.overlay {
-  &:after { 
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background:rgba(232, 232, 232, 0.32);
-    transition: all 1s ease;
-    animation-delay: 3s;
-    z-index: 0;
-  }
-  &.overlay-hover:hover {
-    cursor: pointer;
-    &:after { 
-      content: '';
-      background:rgba(222, 222, 222, 0.62);
-      transition: all .5s ease;
-    }
-  }
+.bg-primary {
+  background-color: $primary;
 }
-
+.hover\:bg-primary:hover {
+  background-color: $primary;
+  transition: all .3s ease;
+}
 
 .h-70 {
   height: 330px;
 }
 
+button:focus {
+  outline: solid 1px black;
+}
