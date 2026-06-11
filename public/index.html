@@ -1,239 +1,555 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, initial-scale=1, viewport-fit=cover">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <link href="img/favicon.png" rel="icon" type="image/x-icon" />
-  
-      <title>DONNA GALLETTA</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link href="img/favicon.png" rel="icon" type="image/x-icon" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.3/swiper-bundle.css">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">    
+    <title>DONNA GALLETTA</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.3/swiper-bundle.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="css/main.min.css" />
-
-
   </head>
 
-<body id="page-top">
-
+  <body id="page-top">
     <nav class="sticky top-0 bg-white w-full z-50">
+      <div class="block lg:hidden m-1 pl-4 py-2">
+        <button
+          class="button-m flex items-center px-3 py-2 border rounded text-black border-black hover:text-black hover:border-white"
+        >
+          <svg
+            class="fill-current h-3 w-3"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
+        <h1 class="font-light uppercase absolute top-0 right-0 p-4">
+          <strong>Donna</strong> Galletta
+        </h1>
+      </div>
 
-        <div class="block lg:hidden m-1 pl-4 py-2">
-            <button class="button-m flex items-center px-3 py-2 border rounded text-black border-black hover:text-black hover:border-white">
-              <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg>
-            </button>
-            <h1 class="font-light uppercase absolute top-0 right-0 p-4"><strong>Donna</strong> Galletta</h1>
-        </div>
-          
-    <div class="menu hidden lg:block">
-        <div class="bg-white flex flex-wrap content-center w-full lg:py-4 text-black  text-center"> 
-        
-            <div class="lg:w-1/3 w-full xl:block hidden">
-                <h1 class="font-light uppercase"><strong>Donna</strong> Galletta</h1>
-            </div>
-            
-            <div class="lg:w-2/3 w-full">
-                <a class="highlight mx-4 uppercase xl:text-xs lg:inline block my-3 lg:my-0" href="#gallery">Websites</a>
-                <a class="highlight mx-4 uppercase xl:text-xs lg:inline block my-3 lg:my-0" href="#items">Email Showcase</a>
-                <a class="highlight mx-4 uppercase xl:text-xs lg:inline block my-3 lg:my-0" href="#connect">Connect</a>
-            </div>
+      <div class="menu hidden lg:block">
+        <div
+          class="bg-white flex flex-wrap content-center w-full lg:py-4 text-black text-center"
+        >
+          <div class="lg:w-1/3 w-full xl:block hidden">
+            <h1 class="font-light uppercase">
+              <strong>Donna</strong> Galletta
+            </h1>
+          </div>
 
+          <div class="lg:w-2/3 w-full">
+            <a
+              class="highlight mx-4 uppercase xl:text-xs lg:inline block my-3 lg:my-0"
+              href="#items"
+              >Email Showcase</a
+            >
+            <a
+              class="highlight mx-4 uppercase xl:text-xs lg:inline block my-3 lg:my-0"
+              href="#connect"
+              >Connect</a
+            >
+          </div>
         </div>
-    </div>
-      
+      </div>
     </nav>
 
-  
+    <div class="xl:pb-24 xl:bg-transparent bg-white" data-aos="fade-up">
+      <div id="items" class="container mx-auto xl:mb-24">
+        <form class="pt-10 pb-10 text-center">
+          <h2 class="font-serif lg:text-5xl text-3xl font-bold xl:pb-4 pt-24">
+            Emails
+          </h2>
+          <button
+            class="highlight w-2/5 lg:w-auto mt-3 px-5 py-2 font-bold"
+            @click.prevent="setStatus('')"
+          >
+            All
+          </button>
+          <button
+            class="highlight font-light py-2 px-4 xl:my-0 my-1"
+            @click.prevent="setStatus('animation')"
+          >
+            Animation
+          </button>
+          <button
+            class="highlight font-light py-2 px-4 xl:my-0 my-1"
+            @click.prevent="setStatus('newsletter')"
+          >
+            Newsletter
+          </button>
+          <button
+            class="highlight font-light py-2 px-4 xl:my-0 my-1"
+            @click.prevent="setStatus('transactional')"
+          >
+            Transactional
+          </button>
+          <button
+            class="highlight font-light py-2 px-4 xl:my-0 my-1"
+            @click.prevent="setStatus('promo')"
+          >
+            Promo
+          </button>
+          <button
+            class="highlight font-light py-2 px-4 xl:my-0 my-1"
+            @click.prevent="setStatus('event')"
+          >
+            Event
+          </button>
+          <button
+            class="highlight font-light py-2 px-4 xl:my-0 my-1"
+            @click.prevent="setStatus('carousel')"
+          >
+            Carousel
+          </button>
+          <button
+            class="highlight font-light py-2 px-4 xl:my-0 my-1"
+            @click.prevent="setStatus('countdown')"
+          >
+            Countdown
+          </button>
+          <button
+            class="highlight font-light py-2 px-4 xl:my-0 my-1"
+            @click.prevent="setStatus('gamification')"
+          >
+            Gamification
+          </button>
+        </form>
 
-<div id="gallery" class="xl:py-24 xl:mx-8"> 
-    <div class="container mx-auto text-center" data-aos="fade" data-aos-duration="1000">
-        <h2 class="font-serif lg:text-5xl text-3xl font-bold pb-4 mb-2">Websites</h2>
-    </div>
-   <div id="folio" class="swiper-container">
-      <div class="swiper-wrapper h-swiper">
-          <div class="swiper-slide" v-for="item in items">
-              <div class="w-full font-sans text-left text-white" >
-                  <div class="bg-center bg-cover h-swiper" :style="{ 'background-image': 'url(' + item.img + ')' }">
-                    <div class="flex content-center flex-wrap h-swiper pb-20 px-20 fade-in delay-1-2">
-                      <div class="container mx-auto lg:px-0 pt-64">
-                          <div class="text-white">
-                            <h1 class="mb-8 mark-bold lg:text-6xl text-5xl leading-none">
-                              {{ item.project }}
-                            </h1>
-                            <p class="pb-8">{{ item.text }}</p>
-                            <a class="bg-transparent hover:bg-white text-white hover:text-black py-2 px-6 border border-white hover:gray-transparent rounded rounded-full 
-                              no-underline" target="_blank" :href="item.url">
-                              View Website  <span class="text-xl">↬</span>
-                            </a>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            </div>
+        <div class="flex flex-wrap">
+          <div
+            class="lg:w-1/4 w-1/2 p-1"
+            data-aos="fade"
+            data-aos-duration="1000"
+            v-for="item in items | filterBy search_filter in 'name' | filterBy status_filter in 'group'"
+            v-show="setPaginate($index)"
+          >
+            <a
+              target="_blank"
+              :href="item.url"
+              class="w-auto flex-grow flex flex-col justify-center text-black h-70 lg:p-10 p-8 bg-cover bg-top relative overlay overlay-hover"
+              :style="{ 'background-image': 'url(' + item.img + ')' }"
+            >
+              <h1
+                class="text-white mb-8 mark-bold text-3xl leading-none relative z-10"
+              >
+                {{ item.name }}
+              </h1>
+              <div
+                class="relative z-10 no-underline text-white font-light"
+                target="_blank"
+                :href="item.url"
+              >
+                View Email <span class="text-xl">↬</span>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
-          <!-- Add Arrows -->
-    <div class="swiper-button-next swiper-button-white"></div>
-    <div class="swiper-button-prev swiper-button-white"></div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-  </div>
-  </div>
-	 
-
-
-<div class="xl:pb-24 xl:bg-transparent bg-white" data-aos="fade-up"> 
-<div id="items" class="container mx-auto xl:mb-24">
-    <form class="pt-10 pb-10 text-center">
-        <h2 class="font-serif lg:text-5xl text-3xl font-bold xl:pb-4 pt-24">Emails</h2>
-        <button class="highlight w-2/5 lg:w-auto mt-3 px-5 py-2 font-bold" @click.prevent="setStatus('')">All</button>
-        <button class="highlight font-light py-2 px-4 xl:my-0 my-1" @click.prevent="setStatus('animation')">Animation</button>
-        <button class="highlight font-light py-2 px-4 xl:my-0 my-1" @click.prevent="setStatus('newsletter')">Newsletter</button>
-        <button class="highlight font-light py-2 px-4 xl:my-0 my-1" @click.prevent="setStatus('transactional')">Transactional</button>
-        <button class="highlight font-light py-2 px-4 xl:my-0 my-1" @click.prevent="setStatus('promo')">Promo</button>
-        <button class="highlight font-light py-2 px-4 xl:my-0 my-1" @click.prevent="setStatus('event')">Event</button>
-        <button class="highlight font-light py-2 px-4 xl:my-0 my-1" @click.prevent="setStatus('carousel')">Carousel</button>
-        <button class="highlight font-light py-2 px-4 xl:my-0 my-1" @click.prevent="setStatus('countdown')">Countdown</button>
-        <button class="highlight font-light py-2 px-4 xl:my-0 my-1" @click.prevent="setStatus('gamification')">Gamification</button>
-    </form>
-    
-        <div class="flex flex-wrap ">
-            <div class="lg:w-1/4 w-1/2 p-1" data-aos="fade" data-aos-duration="1000"
-            v-for="item in items | filterBy search_filter in 'name' | filterBy status_filter in 'group'" 
-            v-show="setPaginate($index)">
-                <a target="_blank" :href="item.url"
-                class="w-auto flex-grow flex flex-col justify-center text-black  h-70 lg:p-10 p-8 bg-cover bg-top relative overlay overlay-hover"  :style="{ 'background-image': 'url(' + item.img + ')' }">
-                    <h1 class="text-white mb-8 mark-bold text-3xl leading-none relative z-10">
-                        {{ item.name }}
-                      </h1>
-                    <div class="relative z-10 no-underline text-white font-light" target="_blank" :href="item.url">
-                         View Email  <span class="text-xl">↬</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-</div>
-
-</div>
-
-
-<footer id="connect" class="bg-gray-900 py-10">
-    <div class="xl:w-1/3 w-full  mx-auto">
-        <div class="blob-wrapper">
-            <p><span></span></p>
-            <p><span></span></p>
-        </div>
     </div>
-    <div class="flex xl:flex-wrap aos-init aos-animate" data-aos="fade-up">
+
+    <footer id="connect" class="bg-gray-900 py-10">
+      <div class="xl:w-1/3 w-full mx-auto">
+        <div class="blob-wrapper">
+          <p><span></span></p>
+          <p><span></span></p>
+        </div>
+      </div>
+      <div class="flex xl:flex-wrap aos-init aos-animate" data-aos="fade-up">
         <div class="lg:w-1/2 w-full lg:px-8 w-full mx-auto my-10">
           <div class="text-center">
             <h2 class="font-serif lg:text-4xl pb-4 text-white">Socials</h2>
             <p class="text-2xl">
-                <a target="_blank" href="https://www.linkedin.com/in/donna-galletta" class="text-gray-200 hover:text-white no-underline fab fa-linkedin"></a>
-                <a target="_blank" href="https://codepen.io/DonnaG/" class="px-8 text-gray-200 hover:text-white no-underline fab fa-codepen"></a>
-                <a target="_blank" href="https://twitter.com/DonnaGalletta" class="text-gray-200 hover:text-white no-underline fab fa-twitter"></a>
-                <a target="_blank" href="https://medium.com/@DonnaGalletta" class="pl-8 text-gray-200 hover:text-white no-underline fab fa-medium"></a>
-            </p>           
-            </div>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/donna-galletta"
+                class="text-gray-200 hover:text-white no-underline fab fa-linkedin"
+              ></a>
+              <a
+                target="_blank"
+                href="https://codepen.io/DonnaG/"
+                class="px-8 text-gray-200 hover:text-white no-underline fab fa-codepen"
+              ></a>
+              <a
+                target="_blank"
+                href="https://twitter.com/DonnaGalletta"
+                class="text-gray-200 hover:text-white no-underline fab fa-twitter"
+              ></a>
+              <a
+                target="_blank"
+                href="https://medium.com/@DonnaGalletta"
+                class="pl-8 text-gray-200 hover:text-white no-underline fab fa-medium"
+              ></a>
+            </p>
+          </div>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
     <!-- Plugin JavaScript -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.3/swiper-bundle.min.js"></script>
-    <script src='https://v1.vuejs.org/js/vue.js'></script>
+    <script src="https://v1.vuejs.org/js/vue.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-        $(".button-m").click(function(){$(".menu").slideToggle("hidden")}),$(document).ready(function(){new Swiper("#folio",{slidesPerView:1,spaceBetween:0,direction:"horizontal",autoplay:{delay:4e3},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination",clickable:!0},keyboard:{enabled:!0,onlyInViewport:!1},breakpoints:{640:{direction:"horizontal",slidesPerView:2.3,spaceBetween:10}}});$(".swiper-pagination-bullet").hover(function(){$(this).trigger("click")})}),$(document).ready(function(){new Swiper("#emails",{slidesPerView:1,spaceBetween:0,direction:"vertical",pagination:{el:".email-pag",clickable:!0},keyboard:{enabled:!0,onlyInViewport:!1},breakpoints:{640:{direction:"horizontal",slidesPerView:3,spaceBetween:10}}});$(".swiper-pagination-bullet").hover(function(){$(this).trigger("click")})});var Nanobar=function(){var e,i,t,n,o,s,a={width:"100%",height:"4px",zIndex:9999,top:"0"},l={width:0,height:"100%",clear:"both",transition:"height .3s"};return e=function(t,i){for(var e in i)t.style[e]=i[e];t.style.float="left"},n=function(){var t=this,i=this.width-this.here;i<.1&&-.1<i?(o.call(this,this.here),this.moving=!1,100==this.width&&(this.el.style.height=0,setTimeout(function(){t.cont.el.removeChild(t.el)},100))):(o.call(this,this.width-i/4),setTimeout(function(){t.go()},16))},o=function(t){this.width=t,this.el.style.width=this.width+"%"},s=function(){var t=new i(this);this.bars.unshift(t)},(i=function(t){this.el=document.createElement("div"),this.el.style.backgroundColor=t.opts.bg,this.here=this.width=0,this.moving=!1,this.cont=t,e(this.el,l),t.el.appendChild(this.el)}).prototype.go=function(t){t?(this.here=t,this.moving||(this.moving=!0,n.call(this))):this.moving&&n.call(this)},(t=function(t){var i;(t=this.opts=t||{}).bg=t.bg||"#f7d8c8",this.bars=[],i=this.el=document.createElement("div"),e(this.el,a),t.id&&(i.id=t.id),i.style.position=t.target?"relative":"fixed",t.target?t.target.insertBefore(i,t.target.firstChild):document.getElementsByTagName("body")[0].appendChild(i),s.call(this)}).prototype.go=function(t){this.bars[0].go(t),100==t&&s.call(this)},t}(),nanobar=new Nanobar;nanobar.go(30),nanobar.go(60),nanobar.go(100),AOS.init();
-
-        var gallery = new Vue({
-          el: '#gallery',
-          data: {
-            filterAll: '',
-            items: [
-              { project: 'Slurpee', text: 'Tap of War | Award Judges Landingpage', url: 'http://awardjudges.com.au/slurpeetapofwar/ ', img: 'img/gallery/5.jpg', },
-              { project: 'Fed Square', text: 'Award Judges Landingpage', url: 'http://awardjudges.com.au/fedsquare/public/', img: 'img/gallery/1.jpg', },
-              { project: 'UNIQLO', text: 'Umood | Award Judges Landingpage', url: 'http://awardjudges.com.au/umood/ ', img: 'img/gallery/8.jpg', },
-              { project: 'Kmart', text: 'Stick and Style | Award Judges Landingpage', url: 'http://awardjudges.com.au/stickandstyle/ ', img: 'img/gallery/10.jpg', },
-              { project: 'Momatu', text: 'App Website', url: 'https://web.momatu.com/', img: 'img/gallery/2.jpg', },
-              { project: 'Carriberrie', text: 'Award Judges Landingpage', url: 'http://awardjudges.com.au/carriberrie/', img: 'img/gallery/3.jpg', },
-              { project: 'Village Roadshow', text: 'Tomb Raider | Award Judges Landingpage', url: 'http://awardjudges.com.au/tombraider/ ', img: 'img/gallery/4.jpg', },
-              { project: 'Spotify podcasts', text: 'PayPal | Award Judges Landingpage', url: 'http://awardjudges.com.au/paypalpodcast/ ', img: 'img/gallery/11.jpg', },
-              { project: 'Cat VR', text: 'Award Judges Landingpage', url: 'http://awardjudges.com.au/catvr/', img: 'img/gallery/6.jpg', },
-              { project: 'Qisper', text: 'App Website', url: 'https://qisper.com/ ', img: 'img/gallery/9.jpg', },
-          ]
-          },
-        });
-
-
-        new Vue({
-          el: '#items',
-          created() {
-            this.paginate_total = this.items.length/this.paginate;
-          },
-          data: {
-            current: 1,
-            items: [
-              { name: 'Australian Futures', group: 'animation', url: 'https://mailchi.mp/australianfutures/meet-the-perfect-candidate?e=e693eb72a0', img: 'img/gallery/email-9.jpg', },
-              { name: 'Klip Studio', group: 'animation', url: 'http://createsend.com/t/y-F919627F298B421F', img: 'img/gallery/email-2.jpg', },
-              { name: 'Australia Post', group: 'newsletter', url: 'https://isobarstudio.createsend.com/t/ViewEmail/y/EC271B7BB5B53DBA/C67FD2F38AC4859C/?tx=0&previewAll=1&print=1', img: 'img/gallery/email-8.jpg', },
-              { name: 'TAC', group: 'newsletter', url: 'https://isobarstudio.createsend.com/t/ViewEmail/y/19331E05C4D1D312/C67FD2F38AC4859C', img: 'img/gallery/email-10.jpg', },
-              { name: 'Racing Victoria', group: 'transactional', url: 'https://isobarstudio.createsend.com/t/ViewEmail/y/91EDA739FC49F3DB/C67FD2F38AC4859C ', img: 'img/gallery/email-7.jpg', },
-              { name: 'Isobar', group: 'event', url: 'https://isobaraustralia.createsend1.com/t/ViewEmail/y/5AB925D7BE63AEF6', img: 'img/gallery/email-1.jpg', },
-              { name: 'Australia Post Shipster', group: 'carousel', url: 'https://isobarstudio.cmail20.com/t/ViewEmail/y/DC29EEAF1D5B5600/1701EFAE8EC2B1513FEC1D8A50AFD3BD ', img: 'img/gallery/email-3.jpg', },
-              { name: 'Holden', group: 'animation', url: 'http://holdenclient.cmail20.com/t/ViewEmail/y/BCF3B5A5D0A09813/DA77E062F9893914B4B1B1F623478121 ', img: 'img/gallery/email-12.jpg', },
-              { name: 'Sportsbet', group: 'countdown', url: 'https://isobarstudio.createsend.com/t/ViewEmail/y/560A47D43B55C9E3/C67FD2F38AC4859C', img: 'img/gallery/email-5.jpg', },
-              { name: 'Australia Post', group: 'transactional', url: 'https://isobarstudio.createsend.com/t/ViewEmail/y/560A47D43B55C9E3/C67FD2F38AC4859C ', img: 'img/gallery/email-11.jpg', },
-              { name: 'Holden', group: 'animation newsletter', url: 'http://holden.createsend1.com/t/ViewEmail/y/832BDB3F35D4C6DF ', img: 'img/gallery/email-4.jpg', },
-              { name: 'UNIQLO', group: 'Promo', url: 'http://uniqlo.createsend1.com/t/ViewEmail/y/61C0A778A94037F3', img: 'img/gallery/email-13.jpg', },
-              { name: 'Isobar', group: 'Event', url: 'https://isobaraustralia.createsend1.com/t/ViewEmail/y/DEF3C090ABDAD810', img: 'img/gallery/email-14.jpg', },
-              { name: 'Australia Post', group: 'promo', url: 'https://isobarstudio.createsend.com/t/ViewEmail/y/31408A6FEC6C54E7/C67FD2F38AC4859C', img: 'img/gallery/email-15.jpg', },
-              { name: 'Australia Post Shipster ', group: 'Promo', url: 'http://createsend.com/t/y-9CB12B556925E9CB', img: 'img/gallery/email-16.jpg', },
-              { name: 'Mario Bros ', group: 'gamification', url: 'http://isobarstudio.createsend1.com/t/ViewEmail/y/9A9A72FCC48DD603', img: 'img/gallery/email-6.jpg', },
-            ],
-            paginate: 100,
-            paginate_total: 0,
-            search_filter: '',
-            status_filter: ''
-          },
-          methods: {
-            setPaginate: function (i) {
-              if (this.current == 1) {
-                return i < this.paginate;
-              }
-              else {
-                return (i >= (this.paginate * (this.current - 1)) && i < (this.current * this.paginate));
-              }
+      ($(".button-m").click(function () {
+        $(".menu").slideToggle("hidden");
+      }),
+        $(document).ready(function () {
+          new Swiper("#folio", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            direction: "horizontal",
+            autoplay: { delay: 4e3 },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
             },
-            setStatus: function (status) {
-              this.status_filter = status;
-              this.$nextTick(function () {
-                this.updatePaginate();
-              });
+            pagination: { el: ".swiper-pagination", clickable: !0 },
+            keyboard: { enabled: !0, onlyInViewport: !1 },
+            breakpoints: {
+              640: {
+                direction: "horizontal",
+                slidesPerView: 2.3,
+                spaceBetween: 10,
+              },
             },
-            updateCurrent: function (i) {
-              this.current = i;
+          });
+          $(".swiper-pagination-bullet").hover(function () {
+            $(this).trigger("click");
+          });
+        }),
+        $(document).ready(function () {
+          new Swiper("#emails", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            direction: "vertical",
+            pagination: { el: ".email-pag", clickable: !0 },
+            keyboard: { enabled: !0, onlyInViewport: !1 },
+            breakpoints: {
+              640: {
+                direction: "horizontal",
+                slidesPerView: 3,
+                spaceBetween: 10,
+              },
             },
-            updatePaginate: function () {
-              this.current = 1;
-              this.paginate_total = Math.ceil(document.querySelectorAll('tbody tr').length/this.paginate);
+          });
+          $(".swiper-pagination-bullet").hover(function () {
+            $(this).trigger("click");
+          });
+        }));
+      var Nanobar = (function () {
+          var e,
+            i,
+            t,
+            n,
+            o,
+            s,
+            a = { width: "100%", height: "4px", zIndex: 9999, top: "0" },
+            l = {
+              width: 0,
+              height: "100%",
+              clear: "both",
+              transition: "height .3s",
+            };
+          return (
+            (e = function (t, i) {
+              for (var e in i) t.style[e] = i[e];
+              t.style.float = "left";
+            }),
+            (n = function () {
+              var t = this,
+                i = this.width - this.here;
+              i < 0.1 && -0.1 < i
+                ? (o.call(this, this.here),
+                  (this.moving = !1),
+                  100 == this.width &&
+                    ((this.el.style.height = 0),
+                    setTimeout(function () {
+                      t.cont.el.removeChild(t.el);
+                    }, 100)))
+                : (o.call(this, this.width - i / 4),
+                  setTimeout(function () {
+                    t.go();
+                  }, 16));
+            }),
+            (o = function (t) {
+              ((this.width = t), (this.el.style.width = this.width + "%"));
+            }),
+            (s = function () {
+              var t = new i(this);
+              this.bars.unshift(t);
+            }),
+            ((i = function (t) {
+              ((this.el = document.createElement("div")),
+                (this.el.style.backgroundColor = t.opts.bg),
+                (this.here = this.width = 0),
+                (this.moving = !1),
+                (this.cont = t),
+                e(this.el, l),
+                t.el.appendChild(this.el));
+            }).prototype.go = function (t) {
+              t
+                ? ((this.here = t),
+                  this.moving || ((this.moving = !0), n.call(this)))
+                : this.moving && n.call(this);
+            }),
+            ((t = function (t) {
+              var i;
+              (((t = this.opts = t || {}).bg = t.bg || "#f7d8c8"),
+                (this.bars = []),
+                (i = this.el = document.createElement("div")),
+                e(this.el, a),
+                t.id && (i.id = t.id),
+                (i.style.position = t.target ? "relative" : "fixed"),
+                t.target
+                  ? t.target.insertBefore(i, t.target.firstChild)
+                  : document.getElementsByTagName("body")[0].appendChild(i),
+                s.call(this));
+            }).prototype.go = function (t) {
+              (this.bars[0].go(t), 100 == t && s.call(this));
+            }),
+            t
+          );
+        })(),
+        nanobar = new Nanobar();
+      (nanobar.go(30), nanobar.go(60), nanobar.go(100), AOS.init());
+
+      var gallery = new Vue({
+        el: "#gallery",
+        data: {
+          filterAll: "",
+          items: [
+            {
+              project: "Slurpee",
+              text: "Tap of War | Award Judges Landingpage",
+              url: "http://awardjudges.com.au/slurpeetapofwar/ ",
+              img: "img/gallery/5.jpg",
+            },
+            {
+              project: "Fed Square",
+              text: "Award Judges Landingpage",
+              url: "http://awardjudges.com.au/fedsquare/public/",
+              img: "img/gallery/1.jpg",
+            },
+            {
+              project: "UNIQLO",
+              text: "Umood | Award Judges Landingpage",
+              url: "http://awardjudges.com.au/umood/ ",
+              img: "img/gallery/8.jpg",
+            },
+            {
+              project: "Kmart",
+              text: "Stick and Style | Award Judges Landingpage",
+              url: "http://awardjudges.com.au/stickandstyle/ ",
+              img: "img/gallery/10.jpg",
+            },
+            {
+              project: "Momatu",
+              text: "App Website",
+              url: "https://web.momatu.com/",
+              img: "img/gallery/2.jpg",
+            },
+            {
+              project: "Carriberrie",
+              text: "Award Judges Landingpage",
+              url: "http://awardjudges.com.au/carriberrie/",
+              img: "img/gallery/3.jpg",
+            },
+            {
+              project: "Village Roadshow",
+              text: "Tomb Raider | Award Judges Landingpage",
+              url: "http://awardjudges.com.au/tombraider/ ",
+              img: "img/gallery/4.jpg",
+            },
+            {
+              project: "Spotify podcasts",
+              text: "PayPal | Award Judges Landingpage",
+              url: "http://awardjudges.com.au/paypalpodcast/ ",
+              img: "img/gallery/11.jpg",
+            },
+            {
+              project: "Cat VR",
+              text: "Award Judges Landingpage",
+              url: "http://awardjudges.com.au/catvr/",
+              img: "img/gallery/6.jpg",
+            },
+            {
+              project: "Qisper",
+              text: "App Website",
+              url: "https://qisper.com/ ",
+              img: "img/gallery/9.jpg",
+            },
+          ],
+        },
+      });
+
+      new Vue({
+        el: "#items",
+        created() {
+          this.paginate_total = this.items.length / this.paginate;
+        },
+        data: {
+          current: 1,
+          items: [
+            {
+              name: "Australian Futures",
+              group: "animation",
+              url: "https://mailchi.mp/australianfutures/meet-the-perfect-candidate?e=e693eb72a0",
+              img: "img/gallery/email-9.jpg",
+            },
+            {
+              name: "Klip Studio",
+              group: "animation",
+              url: "http://createsend.com/t/y-F919627F298B421F",
+              img: "img/gallery/email-2.jpg",
+            },
+            {
+              name: "Australia Post",
+              group: "newsletter",
+              url: "https://isobarstudio.createsend.com/t/ViewEmail/y/EC271B7BB5B53DBA/C67FD2F38AC4859C/?tx=0&previewAll=1&print=1",
+              img: "img/gallery/email-8.jpg",
+            },
+            {
+              name: "TAC",
+              group: "newsletter",
+              url: "https://isobarstudio.createsend.com/t/ViewEmail/y/19331E05C4D1D312/C67FD2F38AC4859C",
+              img: "img/gallery/email-10.jpg",
+            },
+            {
+              name: "Racing Victoria",
+              group: "transactional",
+              url: "https://isobarstudio.createsend.com/t/ViewEmail/y/91EDA739FC49F3DB/C67FD2F38AC4859C ",
+              img: "img/gallery/email-7.jpg",
+            },
+            {
+              name: "Isobar",
+              group: "event",
+              url: "https://isobaraustralia.createsend1.com/t/ViewEmail/y/5AB925D7BE63AEF6",
+              img: "img/gallery/email-1.jpg",
+            },
+            {
+              name: "Australia Post Shipster",
+              group: "carousel",
+              url: "https://isobarstudio.cmail20.com/t/ViewEmail/y/DC29EEAF1D5B5600/1701EFAE8EC2B1513FEC1D8A50AFD3BD ",
+              img: "img/gallery/email-3.jpg",
+            },
+            {
+              name: "Holden",
+              group: "animation",
+              url: "http://holdenclient.cmail20.com/t/ViewEmail/y/BCF3B5A5D0A09813/DA77E062F9893914B4B1B1F623478121 ",
+              img: "img/gallery/email-12.jpg",
+            },
+            {
+              name: "Sportsbet",
+              group: "countdown",
+              url: "https://isobarstudio.createsend.com/t/ViewEmail/y/560A47D43B55C9E3/C67FD2F38AC4859C",
+              img: "img/gallery/email-5.jpg",
+            },
+            {
+              name: "Australia Post",
+              group: "transactional",
+              url: "https://isobarstudio.createsend.com/t/ViewEmail/y/560A47D43B55C9E3/C67FD2F38AC4859C ",
+              img: "img/gallery/email-11.jpg",
+            },
+            {
+              name: "Holden",
+              group: "animation newsletter",
+              url: "http://holden.createsend1.com/t/ViewEmail/y/832BDB3F35D4C6DF ",
+              img: "img/gallery/email-4.jpg",
+            },
+            {
+              name: "UNIQLO",
+              group: "Promo",
+              url: "http://uniqlo.createsend1.com/t/ViewEmail/y/61C0A778A94037F3",
+              img: "img/gallery/email-13.jpg",
+            },
+            {
+              name: "Isobar",
+              group: "Event",
+              url: "https://isobaraustralia.createsend1.com/t/ViewEmail/y/DEF3C090ABDAD810",
+              img: "img/gallery/email-14.jpg",
+            },
+            {
+              name: "Australia Post",
+              group: "promo",
+              url: "https://isobarstudio.createsend.com/t/ViewEmail/y/31408A6FEC6C54E7/C67FD2F38AC4859C",
+              img: "img/gallery/email-15.jpg",
+            },
+            {
+              name: "Australia Post Shipster ",
+              group: "Promo",
+              url: "http://createsend.com/t/y-9CB12B556925E9CB",
+              img: "img/gallery/email-16.jpg",
+            },
+            {
+              name: "Mario Bros ",
+              group: "gamification",
+              url: "http://isobarstudio.createsend1.com/t/ViewEmail/y/9A9A72FCC48DD603",
+              img: "img/gallery/email-6.jpg",
+            },
+          ],
+          paginate: 100,
+          paginate_total: 0,
+          search_filter: "",
+          status_filter: "",
+        },
+        methods: {
+          setPaginate: function (i) {
+            if (this.current == 1) {
+              return i < this.paginate;
+            } else {
+              return (
+                i >= this.paginate * (this.current - 1) &&
+                i < this.current * this.paginate
+              );
             }
-          }
-        });
+          },
+          setStatus: function (status) {
+            this.status_filter = status;
+            this.$nextTick(function () {
+              this.updatePaginate();
+            });
+          },
+          updateCurrent: function (i) {
+            this.current = i;
+          },
+          updatePaginate: function () {
+            this.current = 1;
+            this.paginate_total = Math.ceil(
+              document.querySelectorAll("tbody tr").length / this.paginate,
+            );
+          },
+        },
+      });
     </script>
-
-
-
   </body>
-
 </html>
-
